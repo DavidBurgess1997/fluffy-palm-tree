@@ -88,22 +88,38 @@
         #i {
             animation-duration: 9s;
         }
+        
+        a:hover {
+            animation-name: blink;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        
+        @keyframes blink {
+            0% {
+                color: green;
+            }
+            100% {
+                color: yellow;
+            }
+        }
 
     </style>
 </head>
 
 <body>
 
-    <div id="a">Hey Jane</div>
-    <div id="b">Hey Jane</div>
-    <div id="c">Hey Jane</div>
-    <div id="d">Hey Jane</div>
-    <div id="e">Hey Jane</div>
-    <div id="f">Hey Jane</div>
-    <div id="g">Hey Jane</div>
-    <div id="h">Hey Jane</div>
-    <div id="i">Hey Jane</div>
-    
+    <div id="a"><a href="porn.html">Hey Jane</a></div>
+    <div id="b"><a href="porn.html">Hey Jane</a></div>
+    <div id="c"><a href="porn.html">Hey Jane</a></div>
+    <div id="d"><a href="porn.html">Hey Jane</a></div>
+    <div id="e"><a href="porn.html">Hey Jane</a></div>
+    <div id="f"><a href="porn.html">Hey Jane</a></div>
+    <div id="g"><a href="porn.html">Hey Jane</a></div>
+    <div id="h"><a href="porn.html">Hey Jane</a></div>
+    <div id="i"><a href="porn.html">Hey Jane</a></div>
+
 </body>
 
 </html>
