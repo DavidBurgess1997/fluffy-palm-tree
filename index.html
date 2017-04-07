@@ -8,8 +8,10 @@
             background-color: red;
             animation-name: shiftcolor;
             animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
         }
-
+        
         @keyframes shiftcolor {
             0% {
                 background-color: red;
@@ -19,29 +21,55 @@
             }
         }
         
-        p {
-            margin: auto;
-            align-content: center;
-            padding: 25px;
+        div {
+            width: 100px;
+            height: 50px;
+            animation-timing-function: linear;
             background-color: white;
             font-family: 'Butcherman';
             font-size: 22px;
             animation-name: craziness;
             animation-duration: 4s;
             animation-iteration-count: infinite;
-            
+            animation-direction: alternate;
+            position: relative;
         }
+        
         @keyframes craziness {
             0% {
                 font-stretch: condensed;
                 background-color: white;
                 color: black;
+                text-align: left;
+                left: 0%;
             }
             100% {
                 font-stretch: extra-expanded;
                 background-color: black;
-                color: white;
+                color: red;
+                text-align: right;
+                left: 90%;
             }
+        }
+        
+        #a {
+            animation-duration: 1s;
+        }
+        
+        #b {
+            animation-duration: 2s;
+        }
+        
+        #c {
+            animation-duration: 3s;
+        }
+        
+        #d {
+            animation-duration: 4s;
+        }
+        
+        #e {
+            animation-duration: 5s;
         }
 
     </style>
@@ -49,8 +77,11 @@
 
 <body>
 
-    <p>Hey Jane</p>
-
+    <div id="a">Hey Jane</div>
+    <div id="b">Hey Jane</div>
+    <div id="c">Hey Jane</div>
+    <div id="d">Hey Jane</div>
+    <div id="e">Hey Jane</div>
 </body>
 
 </html>
