@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="images/icon.png">
+    <style>
+        body {
+            background-color: red;
+            animation-name: shiftcolor;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            background-image: url("http://pngimg.com/uploads/fire/fire_PNG6029.png");
+            background-repeat: repeat;
+        }
+        
+        @keyframes shiftcolor {
+            0% {
+                background-color: red;
+            }
+            100% {
+                background-color: black;
+            }
+        }
+        
+        div {
+            width: 100px;
+            height: 50px;
+            animation-timing-function: linear;
+            background-color: white;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 22px;
+            animation-name: craziness;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: relative;
+        }
+        
+        @keyframes craziness {
+            0% {
+                font-stretch: condensed;
+                background-color: white;
+                color: black;
+                text-align: left;
+                left: 0%;
+            }
+            100% {
+                font-stretch: extra-expanded;
+                background-color: black;
+                color: red;
+                text-align: right;
+                left: 90%;
+            }
+        }
+        
+        #a {
+            animation-duration: 1s;
+        }
+        
+        #b {
+            animation-duration: 2s;
+        }
+        
+        #c {
+            animation-duration: 3s;
+        }
+        
+        #d {
+            animation-duration: 4s;
+        }
+        
+        #e {
+            animation-duration: 5s;
+        }
+        
+        #f {
+            animation-duration: 6s;
+        }
+        
+        #g {
+            animation-duration: 7s;
+        }
+        
+        #h {
+            animation-duration: 8s;
+        }
+        
+        #i {
+            animation-duration: 9s;
+        }
+        
+        a:hover {
+            animation-name: blink;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        
+        @keyframes blink {
+            0% {
+                color: green;
+            }
+            100% {
+                color: yellow;
+            }
+        }
+        
+        iframe {
+            /*display: none;*/
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="a"><a href="porn.html">Hey Jane</a></div>
+    <div id="b"><a href="porn.html">Hey Jane</a></div>
+    <div id="c"><a href="porn.html">Hey Jane</a></div>
+    <div id="d"><a href="porn.html">Hey Jane</a></div>
+    <div id="e"><a href="porn.html">Hey Jane</a></div>
+    <div id="f"><a href="porn.html">Hey Jane</a></div>
+    <div id="g"><a href="porn.html">Hey Jane</a></div>
+    <div id="h"><a href="porn.html">Hey Jane</a></div>
+    <div id="i"><a href="porn.html">Hey Jane</a></div>
+    <audio autoplay loop preload="auto"><source src="music/themesong.mp3" type="audio/mpeg">Death Gripped</audio>
+
+</body>
+
+</html>
