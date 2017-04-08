@@ -2,6 +2,46 @@
 <html>
 
 <head>
+    <style>
+        body {
+            animation: enfuego;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+            animation-direction: alternate;
+        }
+        
+        @keyframes enfuego {
+            0% {
+                background-image: url(images/eof1.png);
+            }
+            100% {
+                background-image: url(images/eof2.png);
+            }
+        }
+        
+        a {
+            padding: 20px;
+            background-color: black;
+            font-family: '"Lucida Sans Unicode", "Lucida Grande", sans-serif';
+            font-size: 22px;
+            animation: flashing-margin;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            border-width: 10px;
+            border-style: solid;
+        }
+        
+        @keyframes flashing-margin {
+            0% {
+                border-color: black;
+            }
+            100%{
+                border-color: yellow;
+            }
+        }
+
+    </style>
 </head>
 
 <body>
@@ -10,6 +50,7 @@
     <a href="roulette/realfuckinglife.html">your life</a>
     <script>
         document.getElementById("woah").innerHTML = "Hello JavaScript";
+
         function init() {
             var page = Math.floor(Math.random() * 2) {
                 switch (page) {
@@ -28,7 +69,7 @@
     <script>
         document.getElementById("woah").innerHTML = "Hello JavaScript";
         const init = () => {
-        var page = Math.floor(Math.random() * 2) {
+            var page = Math.floor(Math.random() * 2) {
                 switch (page) {
                     case 0:
                         window.location.replace("roulette/janey.html");
@@ -38,8 +79,9 @@
                         break;
                 }
             }
-      } 
-      window.onload = init; 
+        }
+        window.onload = init;
+
     </script>
     <script>
         window.onload()
