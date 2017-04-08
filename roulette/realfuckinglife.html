@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            iframe {
-                align-self: center;
-                margin: auto;
+
+<head>
+    <style>
+        div {
+            margin: auto;
+            width: 60%;
+        }
+        
+        body {
+            animation: flashy;
+            animation-iteration-count: infinite;
+            animation-duration: 0.5s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+        
+        @keyframes flashy {
+            0% {
+                background-image: url(images/deingeschick1.png);
             }
-            
-            body{
-                animation: flash;
-                animation-iteration-count: infinite;
-                animation-duration: 1s;
-                animation-timing-function: linear;
+            100% {
+                background-image: url(images/deingeschick2.png);
             }
-            
-            @keyframs flash{
-                0%{
-                    background-image: url(images/deingeschick1.png);
-                }
-                100%{
-                    background-image: url(images/deingeschick2.png);
-                }
-            }
-        </style>
-    </head>
-    <body>
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
         <iframe src="https://youtube.com/embed/v31gKo2-2rc?autoplay=1&loop=1&controls=0" width=1000px height=500px>you suck</iframe>
-    </body>
+    </div>
+</body>
+
 </html>
