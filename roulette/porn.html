@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="icon" href="http://anarchists.win/images/icon.png">
-        <link rel='stylesheet' href='//fonts.googleapis.com/css?family=La Belle Aurore' >
-        <style>
-            body {
-                background-image: url("http://anarchists.win/images/jet2.jpeg");
-                background-repeat: repeat;
-                font-family: 'La Belle Aurore';
+
+<head>
+    <link rel="icon" href="http://anarchists.win/images/icon.png">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=La Belle Aurore'>
+    <style>
+        body {
+            background-image: url("http://anarchists.win/images/jet2.jpeg");
+            background-repeat: repeat;
+            font-family: 'La Belle Aurore';
+        }
+        
+        div {
+            position: fixed;
+            top: 100px;
+            left: 100px;
+            animation-name: whoah;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            background-color: transparent;
+        }
+        
+        @keyframes whoah {
+            0% {
+                color: white;
+                font-size: 50px;
             }
-            div{
-                position: fixed;
-                top: 100px;
-                left: 100px;
-                animation-name: whoah;
-                animation-duration: 2s;
-                animation-iteration-count: infinite;
-                animation-direction: alternate;
-                background-color: transparent;
+            100% {
+                color: black;
+                font-size: 100px;
             }
-            
-            @keyframes whoah{
-                0%{
-                    color: white;
-                    font-size: 50px;
-                }
-                100%{
-                    color: black;
-                    font-size: 100px;
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <div><h1>Fuck You</h1></div>
-        <audio autoplay loop preload="auto"><source src="http://anarchists.win/music/pornsong.mp3">ayy fuck you bro</audio>
-    </body>
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Fuck You</h1>
+    </div>
+    <audio autoplay loop preload="auto"><source src="http://anarchists.win/music/pornsong.mp3">ayy fuck you bro</audio>
+</body>
+
 </html>
